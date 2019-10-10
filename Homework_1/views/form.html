@@ -78,10 +78,14 @@
             </div>
             <div class="col">
               <label for="visibility"><h5>Visibility</h5></label>
-              <div class="input-group mb-3" id="visibility">
-                <div class="input-group-prepend">
-                  <button class="btn btn-dark" onclick="makePubPriv(0)" type="button">Public</button>
-                  <button class="btn btn-secondary" onclick="makePubPriv(1)" type="button">Private</button>
+              <div id="visibility">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-secondary">
+                    <input type="radio" name="options" id="private">Private
+                  </label>
+                  <label class="btn btn-secondary">
+                    <input type="radio" name="options" id="public">Public
+                  </label>
                 </div>
               </div>
             </div>
@@ -105,8 +109,6 @@
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
       </div>
-
-
-
+      <br>
     </body>
   </html>
